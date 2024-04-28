@@ -42,6 +42,14 @@ export const experiencesData = [
         icon: React.createElement(LuGraduationCap),
         date: "Aug 2022 - July 2023",
     },
+    {
+        title: "Open Access Technology India",
+        location: "Remote",
+        description:
+            "Led a dynamic UI development initiative for an Extended JavaScript project, leveraging extensive expertise in JavaScript and Windows technology. Achieved a significant enhancement in user experience with a 40% improvement in Performance, ensuring optimal Scalability",
+        icon: React.createElement(LuGraduationCap),
+        date: "Aug 2022 - July 2023",
+    },
 ] as const;
 
 export const projectsData = [

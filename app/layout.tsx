@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import ActiveSectionContextProvider from "@/context/active-section-context";
+import ThemeContextProvider from "@/context/theme-context";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,10 +36,13 @@ export default function RootLayout({
                       md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] 
                       dark:bg-[#676394]"
                 />
-                <ActiveSectionContextProvider>
-                    <Header />
-                    {children}
-                </ActiveSectionContextProvider>
+                <ThemeContextProvider>
+                    <ActiveSectionContextProvider>
+                        <Header />
+                        {children}
+                        <Toaster />
+                    </ActiveSectionContextProvider>
+                </ThemeContextProvider>
             </body>
         </html>
     );
