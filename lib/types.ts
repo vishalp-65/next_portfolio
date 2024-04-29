@@ -10,5 +10,5 @@ export interface dataType {
     liveDemo: string;
     details: string[]; // Specify array type here
     date: string;
-    imageURL: string;
+    imageUrl: string;
 }

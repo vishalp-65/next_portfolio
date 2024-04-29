@@ -30,7 +30,7 @@ const defaultValue = {
     liveDemo: "",
     details: [],
     date: "",
-    imageURL: "",
+    imageUrl: "",
 };
 
 export default function ModalContextProvider({

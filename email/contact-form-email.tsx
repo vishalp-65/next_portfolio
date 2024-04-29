@@ -1,18 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
-import {
-    Html,
-    Body,
-    Head,
-    Heading,
-    Hr,
-    Container,
-    Preview,
-    Section,
-    Text,
-} from "@react-email/components";
-import { Tailwind } from "@react-email/tailwind";
-
 type ContactFormEmailProps = {
     message: string;
     senderEmail: string;
@@ -22,25 +8,48 @@ export default function ContactFormEmail({
     message,
     senderEmail,
 }: ContactFormEmailProps) {
-    return (
-        <Html>
-            <Head />
-            <Preview>New message from your portfolio site</Preview>
-            <Tailwind>
-                <Body className="bg-gray-100 text-black">
-                    <Container>
-                        <Section className="bg-white borderBlack my-10 px-10 py-4 rounded-md">
-                            <Heading className="leading-tight">
-                                You received the following message from the
-                                contact form
-                            </Heading>
-                            <Text>{message}</Text>
-                            <Hr />
-                            <Text>The sender's email is: {senderEmail}</Text>
-                        </Section>
-                    </Container>
-                </Body>
-            </Tailwind>
-        </Html>
-    );
+    return `<!DOCTYPE html>
+	<html>
+	
+	<head>
+		<meta charset="UTF-8">
+		<title>Mail from ${senderEmail}</title>
+		<style>
+			body {
+				background-color: #ffffff;
+				font-family: Arial, sans-serif;
+				font-size: 16px;
+				line-height: 1.4;
+				color: #333333;
+				margin: 0;
+				padding: 0;
+			}
+	
+			.container {
+				max-width: 600px;
+				margin: 0 auto;
+				padding: 20px;
+				text-align: center;
+			}
+	
+			.body {
+				font-size: 16px;
+				margin-bottom: 20px;
+			}	
+		</style>
+	
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="message">Mail from portfolio</div>
+			<div class="body">
+				<p>Dear Vishal,</p>
+				<p>${message}</p>
+				
+			</div>
+			
+	</body>
+	
+	</html>`;
 }

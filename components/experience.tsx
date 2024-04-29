@@ -22,11 +22,12 @@ export default function Experience() {
             ref={ref}
             className="scroll-mt-28 mb-28 sm:mb-40"
         >
-            <SectionHeading>Timeline</SectionHeading>
+            <SectionHeading>Experience & Education</SectionHeading>
             <VerticalTimeline lineColor="">
-                {experiencesData.map((item, index) => (
-                    <React.Fragment key={index}>
+                <React.Fragment>
+                    {experiencesData.map((item, index) => (
                         <VerticalTimelineElement
+                            key={index}
                             contentStyle={{
                                 background:
                                     theme === "light"
@@ -57,19 +58,23 @@ export default function Experience() {
                             <h3 className="font-semibold capitalize">
                                 {item.title}
                             </h3>
-                            <p className="flex items-center gap-2font-normal !mt-0">
-                                <CiLocationOn />
-                                {item.location}
-                            </p>
+                            <div className="flex items-center gap-5">
+                                <p className="flex items-center gap-2 font-normal !mt-1">
+                                    <CiLocationOn />
+                                    {item.location}
+                                </p>
+                                <p className="!mt-1 items-center !font-normal text-gray-700 dark:text-white/75">
+                                    {item.experience}
+                                </p>
+                            </div>
                             <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                                 {item.description}
                             </p>
                         </VerticalTimelineElement>
-                    </React.Fragment>
-                ))}
-                {educationData.map((item, index) => (
-                    <React.Fragment key={index}>
+                    ))}
+                    {educationData.map((item, index) => (
                         <VerticalTimelineElement
+                            key={index}
                             contentStyle={{
                                 background:
                                     theme === "light"
@@ -100,7 +105,7 @@ export default function Experience() {
                             <h3 className="font-semibold capitalize">
                                 {item.title}
                             </h3>
-                            <p className="flex items-center gap-2font-normal !mt-0">
+                            <p className="flex items-center gap-2 font-normal !mt-0">
                                 <CiLocationOn />
                                 {item.location}
                             </p>
@@ -112,8 +117,8 @@ export default function Experience() {
                                 <span className="italic ml-1"> CGPA</span>
                             </p>
                         </VerticalTimelineElement>
-                    </React.Fragment>
-                ))}
+                    ))}
+                </React.Fragment>
             </VerticalTimeline>
         </section>
     );

@@ -19,15 +19,24 @@ export default function Projects() {
         <section
             ref={ref}
             id="projects"
-            className="scroll-mt-28 mb-28 flex flex-col items-center "
+            className="scroll-mt-28 mb-28 flex flex-col items-center"
         >
             <SectionHeading>My projects</SectionHeading>
             <div className="flex items-center gap-3 justify-center flex-wrap">
                 {projectsData.map(
-                    (project, index) =>
+                    (project: any, index) =>
                         maxProject > index && (
                             <React.Fragment key={index}>
-                                <Project {...project} />
+                                <Project
+                                    title={project.title}
+                                    description={project.description}
+                                    tags={project.tags}
+                                    gitURL={project.gitURL}
+                                    liveDemo={project.liveDemo}
+                                    details={project.details}
+                                    date={project.date}
+                                    imageUrl={project.imageUrl}
+                                />
                             </React.Fragment>
                         )
                 )}

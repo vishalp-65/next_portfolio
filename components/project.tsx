@@ -1,15 +1,13 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useModalContext } from "@/context/modalContext";
 import { dataType } from "@/lib/types";
+import Tags from "./tags";
 
-type ProjectProps = (typeof projectsData)[number];
-
-export default function Project(projectData: ProjectProps) {
+export default function Project(projectData: dataType) {
     const ref = useRef<HTMLDivElement>(null);
     const { isModalOpen, setIsModalOpen, setData } = useModalContext();
 
@@ -36,23 +34,16 @@ export default function Project(projectData: ProjectProps) {
             }}
         >
             <section className="bg-gray-100 max-w-[40rem] border border-black/5 h-[24rem] rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-                <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-                    <h3 className="text-2xl font-semibold">
-                        {projectData.title}
-                    </h3>
-                    <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
-                        {projectData.description}
-                    </p>
-                    <ul className="flex flex-wrap mt-4 gap-1 sm:mt-auto">
-                        {projectData.tags.map((tag, index) => (
-                            <li
-                                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
-                                key={index}
-                            >
-                                {tag}
-                            </li>
-                        ))}
-                    </ul>
+                <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col justify-between h-full sm:group-even:ml-[18rem]">
+                    <div>
+                        <h3 className="text-2xl font-semibold">
+                            {projectData.title}
+                        </h3>
+                        <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
+                            {projectData.description}
+                        </p>
+                    </div>
+                    <Tags tags={projectData.tags} />
                 </div>
 
                 <Image

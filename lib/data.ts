@@ -1,6 +1,4 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import messengerClone from "@/public/messenger-clone.png";
 import netflixClone from "@/public/netflix-clone-demo.png";
@@ -59,11 +57,13 @@ export const educationData = [
 export const experiencesData = [
     {
         title: "Open Access Technology India",
+        experience: "1 year",
         location: "Remote",
         description:
-            "Led a dynamic UI development initiative for an Extended JavaScript project, leveraging extensive expertise in JavaScript and Windows technology. Achieved a significant enhancement in user experience with a 40% improvement in Performance, ensuring optimal Scalability",
+            "Led a dynamic JavaScript UI development initiative, optimized SQL queries to expedite data exchange, and enhanced aesthetics, resulting in a 40% performance improvement, 20% reduction in data retrieval time.",
         icon: React.createElement(RiProfileLine),
         date: "Aug 2022 - July 2023",
+        techStack: ["Ex JavaScript", "SQL", "AJAX", "wml", "odg", "webplus"],
     },
 ] as const;
 
@@ -88,7 +88,7 @@ export const projectsData = [
         liveDemo: "",
         details: [
             "Designed Vercel clone with Node.js, JavaScript, S3, Docker, ECS, kafka and used postgresql as database.",
-            "Used AWSECRforcontainer image management, ensuring scalable deployment and efficient resource utilization.",
+            "Used AWS ECR for container image management, ensuring scalable deployment and efficient resource utilization.",
             "Employed AWS S3for build storage, enhancing reliability and Utilized ECS for dynamic container spin-up, ensuring efficient resource allocation and scalability of the application.",
             "Utilized Docker for container image creation, deploying to Amazon ECR for streamlined deployment and stream all logs to the clickhouse using kafka.",
             "Integrated kafka and clickhouse to enable real-time log streaming and polling logs on the fronted.",
@@ -114,12 +114,12 @@ export const projectsData = [
     {
         title: "Messenger",
         description:
-            "Messenger is a chatting website where we can send messeges in real-time with a single user as well as in group",
+            "Messenger is a chatting website where we can send messeges in real-time to single user as well as in group",
         tags: [
             "Next.js",
             "Tailwind",
             "Prisma",
-            "MongoDb",
+            "MongoDB",
             "Pusher",
             "NextAuth",
             "CDN",
@@ -143,7 +143,7 @@ export const projectsData = [
             "React",
             "Tailwind",
             "React chart",
-            "MongoDb",
+            "MongoDB",
             "Node.js",
             "Express",
         ],
@@ -165,7 +165,7 @@ export const projectsData = [
             "React",
             "Material UI",
             "Context API",
-            "MongoDb",
+            "MongoDB",
             "Node.js",
             "Express",
             "Debouncing",
