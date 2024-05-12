@@ -2,6 +2,7 @@ import React from "react";
 
 type Props = {
     tags: string[];
+    more: boolean;
 };
 
 const Tags = (props: Props) => {
@@ -15,6 +16,11 @@ const Tags = (props: Props) => {
                     {tag}
                 </li>
             ))}
+            {props.more && (
+                <p className="px-2 rounded border-gray-500 text-gray-500">
+                    ...
+                </p>
+            )}
         </ul>
     );
 };

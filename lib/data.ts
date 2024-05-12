@@ -3,6 +3,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import messengerClone from "@/public/messenger-clone.png";
 import netflixClone from "@/public/netflix-clone-demo.png";
 import vercelClone from "@/public/vercel-clone.png";
+import twitter from "@/public/twitter.png";
 import qkart from "@/public/qkart.png";
 import flight from "@/public/flight.png";
 import crmApp from "@/public/crm-app.png";
@@ -69,12 +70,12 @@ export const experiencesData = [
 
 export const projectsData = [
     {
-        title: "Vercel Clone",
+        title: "Vercel",
         description:
-            "Vercel clone is a platform where we can deploy our react based project on cloud in just few mintues.",
+            "Vercel is a platform where we can deploy our react based project on cloud in just few mintues.",
         tags: [
-            "React",
             "Next.js",
+            "React",
             "PostgreSql",
             "Tailwind",
             "Prisma",
@@ -95,6 +96,36 @@ export const projectsData = [
         ],
         date: "April 2024",
         imageUrl: vercelClone,
+    },
+    {
+        title: "Twitter",
+        description:
+            "Twitter is platform using Next.js, featuring user authentication, tweet posting, and a following/follower system with real-time updates.",
+        tags: [
+            "Next.js",
+            "React",
+            "PostgreSql",
+            "Tailwind",
+            "Prisma",
+            "GraphQL",
+            "Cloud-front",
+            "AWS",
+            "Redis",
+            "EC2",
+            "Node.js",
+            "Load balancer",
+        ],
+        gitURL: "https://github.com/VisHaL0023/twitter.git",
+        liveDemo: "",
+        details: [
+            "Created a Twitter clone using Next.js have user authentication, tweet posting, following/follower system, real-time updates and user recommendation system.",
+            "Utilized PostgreSQL database to manage data and GraphQL to optimize performance by fetching only the necessary data, enhancing the overall scalability of the application.",
+            "Integrated Redis caching to store the cache of expensive queries like user recommendation, improving the speed and efficiency of the application by reducing database load.",
+            "Deployed on EC2 for spinning up machines and Load Balancer for ensuring high availability and scalability.Enhanced security by implementing Cloud-Front for securing connections, protecting user privacy and data integrity.",
+            "Implemented rate limiting on tweets to prevent unnecessary strain on the database and deter spamming activities.",
+        ],
+        date: "April 2024",
+        imageUrl: twitter,
     },
     {
         title: "Netflix",
