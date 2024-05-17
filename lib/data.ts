@@ -246,8 +246,9 @@ export const skillsData = [
     "Next.js",
     "Node.js",
     "Git",
+    "GraphQL",
     "Kafka",
-    "clickHous",
+    "ClickHouse",
     "AWS",
     "Redis",
     "SQL",
@@ -262,5 +263,4 @@ export const skillsData = [
     "HTML",
     "Postman",
     "CSS",
-    "Framer Motion",
 ] as const;
