@@ -12,6 +12,7 @@ const ContactFormEmail: React.FC<ContactFormEmailProps> = ({
 }) => {
     return (
         <>
+            <div>Sender mail {senderEmail}</div>
             <div>Mail from portfolio</div>
             <p>Dear Vishal,</p>
             <p>{message}</p>
