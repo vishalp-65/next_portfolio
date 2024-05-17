@@ -1,15 +1,18 @@
 "use server";
 
-import React from "react";
 import { Resend } from "resend";
 import { validateString, getErrorMessage } from "@/lib/validate";
-import ContactFormEmail from "@/email/contact-form-email";
+import ContactFormEmail from "@/email/Contact-form-email";
+import React from "react";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+// Define an in-memory map to store email limits
+const emailLimits: Map<string, number> = new Map();
+
 export const sendEmail = async (formData: FormData) => {
-    const senderEmail = formData.get("senderEmail");
-    const message = formData.get("message");
+    const senderEmail = formData.get("senderEmail") as string;
+    const message = formData.get("message") as string;
 
     // simple server-side validation
     if (!validateString(senderEmail, 500)) {
@@ -23,6 +26,16 @@ export const sendEmail = async (formData: FormData) => {
         };
     }
 
+    const limit = 2;
+
+    const sentCount = emailLimits.get(senderEmail) || 0;
+    if (sentCount >= limit) {
+        return {
+            error: "Email limit exceeded",
+        };
+    }
+
+    // Send the email
     let data;
     try {
         data = await resend.emails.send({
@@ -35,6 +48,9 @@ export const sendEmail = async (formData: FormData) => {
                 senderEmail: senderEmail,
             }),
         });
+
+        // Increment the email count for the sender
+        emailLimits.set(senderEmail, sentCount + 1);
     } catch (error: unknown) {
         return {
             error: getErrorMessage(error),
