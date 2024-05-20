@@ -61,7 +61,7 @@ export const experiencesData = [
         experience: "1 year",
         location: "Remote",
         description:
-            "Led a dynamic JavaScript UI development initiative, optimized SQL queries to expedite data exchange, and enhanced aesthetics, resulting in a 40% performance improvement, 20% reduction in data retrieval time.",
+            "Led the development of a dynamic user interface with React.js and TypeScript, enhancing user experience and responsiveness. Improved SQL query performance by 20% with non-clustered indexing.",
         icon: React.createElement(RiProfileLine),
         date: "Aug 2022 - July 2023",
         techStack: ["Ex JavaScript", "SQL", "AJAX", "wml", "odg", "webplus"],
@@ -116,7 +116,8 @@ export const projectsData = [
             "Load balancer",
         ],
         gitURL: "https://github.com/VisHaL0023/twitter.git",
-        liveDemo: "",
+        liveDemo:
+            "https://twitter-ixdtmw3jh-vishal-panchals-projects.vercel.app/",
         details: [
             "Created a Twitter clone using Next.js have user authentication, tweet posting, following/follower system, real-time updates and user recommendation system.",
             "Utilized PostgreSQL database to manage data and GraphQL to optimize performance by fetching only the necessary data, enhancing the overall scalability of the application.",
