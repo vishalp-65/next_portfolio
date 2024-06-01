@@ -36,16 +36,16 @@ export default function Intro() {
                         <Image
                             src={MyImg}
                             alt="Ricardo portrait"
-                            width="250"
-                            height="250"
+                            width="275"
+                            height="275"
                             quality="95"
                             priority={true}
-                            className="h-28 w-28 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+                            className="h-30 w-30 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
                         />
                     </motion.div>
 
                     <motion.span
-                        className="absolute bottom-0 right-0 text-4xl"
+                        className="absolute bottom-5 right-5 text-5xl"
                         initial={{ opacity: 0, scale: 0 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{
@@ -104,26 +104,26 @@ export default function Intro() {
 
                 <div className="flex flex-row items-center gap-2">
                     <a
-                        className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-                        href="https://www.linkedin.com/in/vishal65p/"
+                        className="bg-white p-3 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+                        href="https://www.linkedin.com/in/vishalp65/"
                         target="_blank"
                     >
-                        <BsLinkedin />
+                        <BsLinkedin className="h-6 w-6" />
                     </a>
 
                     <a
-                        className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-                        href="https://github.com/VisHaL0023"
+                        className="bg-white p-3 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+                        href="https://github.com/vishalp-65"
                         target="_blank"
                     >
-                        <FaGithubSquare />
+                        <FaGithubSquare className="h-7 w-7" />
                     </a>
                     <a
-                        className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-                        href="https://leetcode.com/u/_Vishal_p/"
+                        className="bg-white p-3 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+                        href="https://leetcode.com/u/vishalp65/"
                         target="_blank"
                     >
-                        <TbBrandLeetcode />
+                        <TbBrandLeetcode className="h-7 w-7" />
                     </a>
                 </div>
             </motion.div>
