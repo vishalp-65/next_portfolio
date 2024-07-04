@@ -19,16 +19,16 @@ export const links = [
         hash: "#about",
     },
     {
+        name: "Experience",
+        hash: "#experience",
+    },
+    {
         name: "Projects",
         hash: "#projects",
     },
     {
         name: "Skills",
         hash: "#skills",
-    },
-    {
-        name: "Experience",
-        hash: "#experience",
     },
     {
         name: "Contact",
@@ -57,14 +57,34 @@ export const educationData = [
 
 export const experiencesData = [
     {
-        title: "Open Access Technology India",
+        companyName: "Freelancer",
+        title: "Part-time",
+        experience: "11 months",
+        location: "Remote",
+        description:
+            "Led the development of a dynamic user interface with React.js and TypeScript, enhancing user experience and responsiveness. Improved SQL query performance by 20% with non-clustered indexing.",
+        icon: React.createElement(RiProfileLine),
+        date: "Aug 2023 - Current",
+        techStack: [
+            "Javascript",
+            "Typescript",
+            "Docker",
+            "Node.js",
+            "Next.js",
+            "Kafka",
+            "AWS",
+        ],
+    },
+    {
+        companyName: "Open Access Technology India",
+        title: "Associate software developer",
         experience: "1 year",
         location: "Remote",
         description:
             "Led the development of a dynamic user interface with React.js and TypeScript, enhancing user experience and responsiveness. Improved SQL query performance by 20% with non-clustered indexing.",
         icon: React.createElement(RiProfileLine),
         date: "Aug 2022 - July 2023",
-        techStack: ["Ex JavaScript", "SQL", "AJAX", "wml", "odg", "webplus"],
+        techStack: ["React.js", "Node.js", "Typescript", "Javascript"],
     },
 ] as const;
 
