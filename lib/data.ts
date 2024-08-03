@@ -284,4 +284,6 @@ export const skillsData = [
     "HTML",
     "Postman",
     "CSS",
+    "CI/CD",
+    "Github Actions",
 ] as const;
