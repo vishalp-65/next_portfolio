@@ -59,11 +59,12 @@ export default function Contact() {
 
             <form
                 ref={formRef}
-                className="mt-10 flex flex-col dark:text-black"
+                className="mt-10 flex flex-col dark:text-black w-full"
                 onSubmit={handleFormSubmit}
             >
                 <input
-                    className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+                    className="h-14 px-4 rounded-lg borderBlack bg-gray-200 bg-opacity-70 dark:bg-gray-600 dark:bg-opacity-50 dark:focus:bg-opacity-100 transition-all 
+                    dark:outline-none dark:text-white"
                     name="senderEmail"
                     type="email"
                     required
@@ -71,13 +72,16 @@ export default function Contact() {
                     placeholder="Your email"
                 />
                 <textarea
-                    className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+                    className="h-52 my-3 rounded-lg borderBlack p-4 bg-gray-200 bg-opacity-70 dark:bg-gray-600 dark:bg-opacity-50 
+                    dark:focus:bg-opacity-100 transition-all dark:outline-none dark:text-white"
                     name="message"
                     placeholder="Your message"
                     required
                     maxLength={5000}
                 />
-                <SubmitBtn />
+                <div className="flex items-center justify-center mt-3">
+                    <SubmitBtn />
+                </div>
             </form>
         </motion.section>
     );

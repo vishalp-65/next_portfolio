@@ -33,7 +33,7 @@ export default function About() {
                     React, Next.js, Node.js, and MongoDB
                 </span>
                 . I am also familiar with TypeScript, Docker, Kafka, Redis,
-                websockets and Prisma. I am always looking to learn new
+                Github Actions and AWS. I am always looking to learn new
                 technologies. I am currently looking for a{" "}
                 <span className="font-medium">Full-time position</span> as a
                 software developer.

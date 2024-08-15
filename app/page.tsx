@@ -13,7 +13,7 @@ export default function Home() {
     const { isModalOpen } = useModalContext();
 
     return (
-        <main className="flex flex-col items-center px-4">
+        <main className="flex flex-col items-center px-2">
             <Intro />
             <SectionDivider />
             <About />

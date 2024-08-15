@@ -18,7 +18,7 @@ export default function Experience() {
 
     return (
         <section
-            id="experience"
+            id="timeline"
             ref={ref}
             className="scroll-mt-28 mb-28 sm:mb-40"
         >

@@ -22,7 +22,7 @@ export default function Projects() {
             className="scroll-mt-28 mb-28 flex flex-col items-center"
         >
             <SectionHeading>My projects</SectionHeading>
-            <div className="flex items-center gap-3 justify-center flex-wrap">
+            <div className="flex flex-col items-center gap-3 justify-center">
                 {projectsData.map(
                     (project: any, index) =>
                         maxProject > index && (

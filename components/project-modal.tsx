@@ -21,10 +21,10 @@ const ProjectModal = (pros: Props) => {
     return (
         <>
             <dialog className="fixed left-0 top-0 w-full h-full bg-black bg-opacity-50 z-50 overflow-auto backdrop-blur flex justify-center items-center">
-                <div className="bg-white rounded-lg border border-gray-500 m-auto p-4 pt-4 relative w-[45rem] min-h-[22rem] dark:bg-gray-900 dark:text-white">
+                <div className="bg-white rounded-lg border border-gray-500 m-auto p-4 pt-4 relative w-[45rem] min-h-[20rem] dark:bg-gray-900 dark:text-white">
                     <div className="sm:flex sm:flex-col sm:items-start sm:justify-between md:flex-row md:items-start md:justify-between mt-4">
                         <div
-                            className="md:w-1/3 sm:w-full md:gap-3 sm:h-auto md:h-[19rem] sm:gap-3 sm:flex-row sm:items-start 
+                            className="md:w-1/3 sm:w-full md:gap-3 sm:h-auto md:h-[25rem] sm:gap-3 sm:flex-row sm:items-start 
                                 sm:justify-between md:flex md:flex-col md:items-start md:justify-between 
                                 bg-gray-100 dark:bg-gray-700 dark:text-white p-4 rounded-md overflow-x-auto"
                         >

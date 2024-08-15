@@ -67,10 +67,11 @@ export default function Intro() {
             >
                 <span className="font-bold">Hello, I'm Vishal.</span> I'm a{" "}
                 <span className="font-bold">full-stack developer</span> with{" "}
-                <span className="font-bold">1 years</span> of experience. I
+                <span className="font-bold">2 years</span> of experience. I
                 enjoy building <span className="italic">sites & apps</span>. My
-                focus is <span className="underline">Node.js, React (Next.js)</span>
-                <span> as well as backend</span>.
+                focus is{" "}
+                <span className="underline">Node.js, React (Next.js)</span>
+                <span> and deployment</span>.
             </motion.h1>
 
             <motion.div
@@ -95,8 +96,8 @@ export default function Intro() {
 
                 <a
                     className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-                    href="/CV.pdf"
-                    download
+                    href="https://drive.google.com/file/d/1J3Xz1JPMGQRdF5bBB9yaeK7XbV_HzkfH/view?usp=sharing"
+                    target="_blank"
                 >
                     Download CV{" "}
                     <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
