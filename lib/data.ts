@@ -59,7 +59,7 @@ export const experiencesData = [
     {
         companyName: "Freelancer",
         title: "Part-time",
-        experience: "11 months",
+        experience: "1 year 1 month",
         location: "Remote",
         description:
             "Led the development of a dynamic user interface with React.js and TypeScript, enhancing user experience and responsiveness. Improved SQL query performance by 20% with non-clustered indexing.",
@@ -90,9 +90,9 @@ export const experiencesData = [
 
 export const projectsData = [
     {
-        title: "Vercel",
+        title: "Project Builder",
         description:
-            "Vercel is a platform where we can deploy our react based project on cloud in just few mintues.",
+            "Project Builder is a platform where we can deploy our react based project on cloud in just few mintues.",
         tags: [
             "Next.js",
             "React",
@@ -104,15 +104,18 @@ export const projectsData = [
             "clickHouse",
             "Node.js",
             "Docker",
+            "CI/CD",
+            "Github Actions",
         ],
-        gitURL: "https://github.com/VisHaL0023/vercel-clone.git",
+        gitURL: "https://github.com/vishalp-65/Project_Builder.git",
         liveDemo: "",
         details: [
             "Developed using Node.js, JavaScript, TypeScript, S3, Docker, ECS, Kafka, PostgreSQL, and Next.js, ensuring a robust and scalable application.",
             "Utilized ECR for container image management, ensuring scalable deployment and efficient resource utilization.",
             "Employed AWSS3for build storage, enhancing reliability and utilized ECS for dynamic container spin-up, ensuring efficient resource allocation and scalability.",
-            " Created container images with Docker, deployed them to Amazon ECR, and streamed all logs to ClickHouse using Kafka, improving log management and analysis.",
+            "Created container images with Docker, deployed them to Amazon ECR, and streamed all logs to ClickHouse using Kafka, improving log management and analysis.",
             "Integrated Kafka and ClickHouse for real-time log streaming, reducing logging costs by 20% and improving deployment speed by 25%. This also enhanced real-time monitoring and debugging capabilities.",
+            "Implemented CI/CD using webhooks and GitHub Actions, enabling auto-deploy on commit, and added user authentication with GitHub integration for streamlined deployments",
         ],
         date: "April 2024",
         imageUrl: vercelClone,
@@ -135,15 +138,14 @@ export const projectsData = [
             "Node.js",
             "Load balancer",
         ],
-        gitURL: "https://github.com/VisHaL0023/twitter.git",
-        liveDemo:
-            "https://twitter-ixdtmw3jh-vishal-panchals-projects.vercel.app/",
+        gitURL: "https://github.com/vishalp-65/twitter.git",
+        liveDemo: "https://twitter-sigma-cyan.vercel.app/",
         details: [
-            " Created a Twitter using Next.js with user authentication, tweet posting, a following/follower system, real-time updates, and a user recommendation system.",
+            "Created a Twitter using Next.js with user authentication, tweet posting, a following/follower system, real-time updates, and a user recommendation system.",
             "Utilized PostgreSQL as database and GraphQL to fetch necessary data, enhance application scalability & performance.",
-            " Integrated Redis for caching expensive queries like user recommendations, improving speed by 30% and reducing database load by 40%.",
+            "Integrated Redis for caching expensive queries like user recommendations, improving speed by 30% and reducing database load by 40%.",
             "Deployed on EC2 with a load balancer for high availability and scalability, enhancing security with CloudFront for secure connections and data integrity.",
-            " Implemented rate limiting on tweets to prevent unnecessary strain on the database, reducing potential costs by 15% and enhancing application performance.",
+            "Implemented rate limiting on tweets to prevent unnecessary strain on the database, reducing potential costs by 15% and enhancing application performance.",
         ],
         date: "April 2024",
         imageUrl: twitter,
@@ -153,7 +155,7 @@ export const projectsData = [
         description:
             "Made a Netflix UI clone along with authentication using NextAuth.",
         tags: ["React", "Next.js", "Tailwind", "Prisma", "MongoDB", "NextAuth"],
-        gitURL: "https://github.com/VisHaL0023/netflix-clone.git",
+        gitURL: "https://github.com/vishalp-65/netflix-clone.git",
         liveDemo: "https://nettfliix-vp.netlify.app/auth",
         details: [
             "Leveraged Next.js for server-side rendering, enhancing performance and SEO. Integrated NextAuth for secure authentication, enabling smooth user login via Google & GitHub.",
@@ -176,7 +178,7 @@ export const projectsData = [
             "NextAuth",
             "CDN",
         ],
-        gitURL: "https://github.com/VisHaL0023/Messenger_Clone.git",
+        gitURL: "https://github.com/vishalp-65/Messenger_Clone.git",
         liveDemo: "https://messenger-clone-nine-black.vercel.app/",
         details: [
             "Engineered a responsive messaging app with Next.js, Tailwind, and NextAuth, utilizing MongoDB for data storage. Implemented Pusher for real-time messaging and Cloudinary CDN for image uploads.",
@@ -199,7 +201,7 @@ export const projectsData = [
             "Node.js",
             "Express",
         ],
-        gitURL: "https://github.com/VisHaL0023/CRM_App.git",
+        gitURL: "https://github.com/vishalp-65/CRM_App.git",
         liveDemo: "https://crm-app-vishal.netlify.app/",
         details: [
             "Leveraged MERN stack with Redux Toolkit for streamlined state management, resulting in a 15% improvement in application speed and user interaction.",
@@ -222,7 +224,7 @@ export const projectsData = [
             "Express",
             "Debouncing",
         ],
-        gitURL: "https://github.com/VisHaL0023/Q_Kart-React.git",
+        gitURL: "https://github.com/vishalp-65/Q_Kart-React.git",
         liveDemo: "https://qkart-ecommerce-vishal.netlify.app/",
         details: [
             "Boosted state management with Context APIs, enhancing performance by 25% and streamlining maintainability across components.",
@@ -246,7 +248,7 @@ export const projectsData = [
             "JWT",
             "AWS",
         ],
-        gitURL: "https://github.com/VisHaL0023/Flight-Booking-Backend-.git",
+        gitURL: "https://github.com/vishalp-65/Flight-Booking-Backend-.git",
         liveDemo: "",
         details: [
             "Created RESTful APIs for seamless frontend-backend communication based on Micro-Services architecture.",

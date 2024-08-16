@@ -13,7 +13,7 @@ import { useTheme } from "@/context/theme-context";
 import { CiLocationOn } from "react-icons/ci";
 
 export default function Experience() {
-    const { ref } = useSectionInView("Experience");
+    const { ref } = useSectionInView("Timeline");
     const { theme } = useTheme();
 
     return (

@@ -26,20 +26,20 @@ const ProjectModal = (pros: Props) => {
                         <div
                             className="md:w-1/3 sm:w-full md:gap-3 sm:h-auto md:h-[19rem] sm:gap-3 sm:flex-row sm:items-start 
                                 sm:justify-between md:flex md:flex-col md:items-start md:justify-between 
-                                bg-gray-100 dark:bg-gray-700 dark:text-white p-4 rounded-md"
+                                bg-gray-100 dark:bg-gray-700 dark:text-white p-4 rounded-md overflow-x-auto"
                         >
                             <p className="text-3xl font-bold">{title}</p>
                             <p className="text-sm italic">{date}</p>
                             <div className="flex flex-col justify-around gap-3">
                                 <div className="flex items-center gap-3">
                                     <a href={gitURL} target="_blank">
-                                        <p className="flex items-center gap-2">
+                                        <p className="flex items-center gap-2 text-sm">
                                             GitHub <FaGithub />{" "}
                                         </p>
                                     </a>
                                     {liveDemo && (
                                         <a href={liveDemo} target="_blank">
-                                            <p className="flex items-center gap-2">
+                                            <p className="flex items-center gap-2 text-sm">
                                                 URL <FaFirefoxBrowser />{" "}
                                             </p>
                                         </a>
