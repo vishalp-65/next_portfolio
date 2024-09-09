@@ -61,12 +61,12 @@ export default function ThemeContextProvider({
     );
 }
 
-export function useTheme() {
+export const useTheme = () => {
     const context = useContext(ThemeContext);
 
-    if (context === null) {
+    if (context === null || context === undefined) {
         throw new Error("useTheme must be used within a ThemeContextProvider");
     }
 
     return context;
-}
+};

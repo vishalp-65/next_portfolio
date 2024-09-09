@@ -48,7 +48,7 @@ const ProjectModal = (pros: Props) => {
                             </div>
                             <Tags tags={tags} more={false} />
                         </div>
-                        <div className="md:w-2/3 sm:w-full ml-2 h-[19rem] p-3 no-scrollbar overflow-y-auto">
+                        <div className="md:w-2/3 sm:w-full ml-2 max-h-[25rem] h-full p-3 no-scrollbar overflow-y-auto">
                             {details.map((detail, index) => (
                                 <li key={index}>{detail}</li>
                             ))}

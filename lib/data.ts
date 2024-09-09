@@ -57,14 +57,14 @@ export const educationData = [
 
 export const experiencesData = [
     {
-        companyName: "Freelancer",
-        title: "Part-time",
+        companyName: "Digicell",
+        title: "Software Engineer",
         experience: "1 year 1 month",
         location: "Remote",
         description:
             "Architected and deployed a micro-services based projects for clients with Node.js, Typescript, and Next.js, leveraging Docker, AWS services, Kafka and Redis to enhancing scalability and system maintainability.",
         icon: React.createElement(RiProfileLine),
-        date: "Aug 2023 - Current",
+        date: "Aug 2023 - Aug 2024",
         techStack: [
             "Javascript",
             "Typescript",

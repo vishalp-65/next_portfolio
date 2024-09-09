@@ -55,9 +55,12 @@ export default function Experience() {
                             }}
                             visible={true}
                         >
-                            <h3 className="font-semibold capitalize">
-                                {item.title}
+                            <h3 className="text-xl font-bold capitalize">
+                                {item.companyName}
                             </h3>
+                            <h4 className="font-semibold capitalize">
+                                {item.title}
+                            </h4>
                             <div className="flex items-center gap-5">
                                 <p className="flex items-center gap-2 font-normal !mt-1">
                                     <CiLocationOn />
