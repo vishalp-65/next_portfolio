@@ -31,6 +31,7 @@ const defaultValue = {
     details: [],
     date: "",
     imageUrl: "",
+    demoImg: [],
 };
 
 export default function ModalContextProvider({

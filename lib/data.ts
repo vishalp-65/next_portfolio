@@ -111,14 +111,60 @@ export const projectsData = [
         details: [
             "Developed using Node.js, JavaScript, TypeScript, S3, Docker, ECS, Kafka, PostgreSQL, and Next.js, ensuring a robust and scalable application.",
             "Utilized ECR for container image management, ensuring scalable deployment and efficient resource utilization.",
-            "Employed AWSS3for build storage, enhancing reliability and utilized ECS for dynamic container spin-up, ensuring efficient resource allocation and scalability.",
+            "Employed AWS S3 for build storage, enhancing reliability and utilized ECS for dynamic container spin-up, ensuring efficient resource allocation and scalability.",
             "Created container images with Docker, deployed them to Amazon ECR, and streamed all logs to ClickHouse using Kafka, improving log management and analysis.",
             "Integrated Kafka and ClickHouse for real-time log streaming, reducing logging costs by 20% and improving deployment speed by 25%. This also enhanced real-time monitoring and debugging capabilities.",
             "Implemented CI/CD using webhooks and GitHub Actions, enabling auto-deploy on commit, and added user authentication with GitHub integration for streamlined deployments",
         ],
         date: "April 2024",
         imageUrl: vercelClone,
+        demoImg: [
+            "/projects/builder1.png",
+            "/projects/builder2.png",
+            "/projects/builder3.png",
+            "/projects/builder4.png",
+            "/projects/builder5.png",
+            "/projects/builder6.png",
+        ],
     },
+    // {
+    //     title: "Board",
+    //     description:
+    //         "Twitter is platform using Next.js, featuring user authentication, tweet posting, and a following/follower system with real-time updates.",
+    //     tags: [
+    //         "Next.js",
+    //         "React",
+    //         "PostgreSql",
+    //         "Tailwind",
+    //         "Liveblock",
+    //         "Canvas",
+    //         "",
+    //         "AWS",
+    //         "Redis",
+    //         "EC2",
+    //         "Node.js",
+    //         "Load balancer",
+    //     ],
+    //     gitURL: "https://github.com/vishalp-65/whiteboard-clone-.git",
+    //     liveDemo: "https://whiteboard-clone-livid.vercel.app/",
+    //     details: [
+    //         "Created a Twitter using Next.js with user authentication, tweet posting, a following/follower system, real-time updates, and a user recommendation system.",
+    //         "Utilized PostgreSQL as database and GraphQL to fetch necessary data, enhance application scalability & performance.",
+    //         "Integrated Redis for caching expensive queries like user recommendations, improving speed by 30% and reducing database load by 40%.",
+    //         "Deployed on EC2 with a load balancer for high availability and scalability, enhancing security with CloudFront for secure connections and data integrity.",
+    //         "Implemented rate limiting on tweets to prevent unnecessary strain on the database, reducing potential costs by 15% and enhancing application performance.",
+    //     ],
+    //     date: "April 2024",
+    //     imageUrl: twitter,
+    //     demoImg: [
+    //         "/projects/twitter1.png",
+    //         "/projects/twitter2.png",
+    //         "/projects/twitter3.png",
+    //         "/projects/twitter4.png",
+    //         "/projects/twitter5.png",
+    //         "/projects/twitter6.png",
+    //     ],
+    // },
     {
         title: "Twitter",
         description:
@@ -148,6 +194,14 @@ export const projectsData = [
         ],
         date: "April 2024",
         imageUrl: twitter,
+        demoImg: [
+            "/projects/twitter1.png",
+            "/projects/twitter2.png",
+            "/projects/twitter3.png",
+            "/projects/twitter4.png",
+            "/projects/twitter5.png",
+            "/projects/twitter6.png",
+        ],
     },
     {
         title: "Netflix",
@@ -163,6 +217,14 @@ export const projectsData = [
         ],
         date: "April 2024",
         imageUrl: netflixClone,
+        demoImg: [
+            "/projects/netflix1.png",
+            "/projects/netflix2.png",
+            "/projects/netflix3.png",
+            "/projects/netflix4.png",
+            "/projects/netflix5.png",
+            "/projects/netflix6.png",
+        ],
     },
     {
         title: "Messenger",
@@ -186,6 +248,13 @@ export const projectsData = [
         ],
         date: "Aug 2023-Nov 2023",
         imageUrl: messengerClone,
+        demoImg: [
+            "/projects/messenger1.png",
+            "/projects/messenger2.png",
+            "/projects/messenger3.png",
+            "/projects/messenger4.png",
+            "/projects/messenger5.png",
+        ],
     },
     {
         title: "CRM App",
@@ -209,6 +278,12 @@ export const projectsData = [
         ],
         date: "March 2024-April 2024",
         imageUrl: crmApp,
+        demoImg: [
+            "/projects/crm1.png",
+            "/projects/crm2.png",
+            "/projects/crm3.png",
+            "/projects/crm4.png",
+        ],
     },
     {
         title: "Qkart E-commerce",
@@ -232,6 +307,13 @@ export const projectsData = [
         ],
         date: "Sept 2023-Oct 2023",
         imageUrl: qkart,
+        demoImg: [
+            "/projects/qkart1.png",
+            "/projects/qkart2.png",
+            "/projects/qkart3.png",
+            "/projects/qkart4.png",
+            "/projects/qkart5.png",
+        ],
     },
     {
         title: "Flight Booking",
@@ -257,6 +339,7 @@ export const projectsData = [
         ],
         date: "May 2023-Aug 2023",
         imageUrl: flight,
+        demoImg: [flight],
     },
 ] as const;
 
