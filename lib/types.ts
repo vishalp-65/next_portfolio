@@ -11,5 +11,5 @@ export interface dataType {
     details: string[]; // Specify array type here
     date: string;
     imageUrl: string;
-    demoImg: [];
+    demoImg: string[];
 }

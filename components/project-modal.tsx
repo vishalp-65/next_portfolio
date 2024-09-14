@@ -26,7 +26,7 @@ const ProjectModal = (pros: Props) => {
         return (): void => {
             document.body.style.overflow = "unset";
         };
-    }, [isModalOpen]);
+    }, [isModalOpen, data]);
 
     return (
         <>
