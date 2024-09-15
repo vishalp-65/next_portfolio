@@ -21,7 +21,7 @@ const fadeInAnimationVariants = {
     }),
 };
 
-export default function Skills() {
+const Skills = () => {
     const { ref } = useSectionInView("Skills");
 
     return (
@@ -60,4 +60,6 @@ export default function Skills() {
             </ul>
         </section>
     );
-}
+};
+
+export default React.memo(Skills);

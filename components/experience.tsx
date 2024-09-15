@@ -12,7 +12,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
 import { CiLocationOn } from "react-icons/ci";
 
-export default function Experience() {
+const Experience = () => {
     const { ref } = useSectionInView("Timeline");
     const { theme } = useTheme();
 
@@ -125,4 +125,6 @@ export default function Experience() {
             </VerticalTimeline>
         </section>
     );
-}
+};
+
+export default React.memo(Experience);

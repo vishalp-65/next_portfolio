@@ -7,6 +7,7 @@ import twitter from "@/public/twitter.png";
 import qkart from "@/public/qkart.png";
 import flight from "@/public/flight.png";
 import crmApp from "@/public/crm-app.png";
+import board from "@/public/projects/board4.png";
 import { RiProfileLine } from "react-icons/ri";
 
 export const links = [
@@ -79,7 +80,7 @@ export const experiencesData = [
         companyName: "Open Access Technology India",
         title: "Associate software developer",
         experience: "1 year",
-        location: "Remote",
+        location: "Mohali",
         description: `Designed micro-service architectures for both front-end (React) and back-end (Node.js, PostgreSQL) components,leading to a robust and scalable application. Led the development of a real-time chat feature using WebSockets, resulting in a 20% increase in user engagement.`,
         icon: React.createElement(RiProfileLine),
         date: "Aug 2022 - July 2023",
@@ -127,48 +128,50 @@ export const projectsData = [
             "/projects/builder6.png",
         ],
     },
-    // {
-    //     title: "Board",
-    //     description:
-    //         "Twitter is platform using Next.js, featuring user authentication, tweet posting, and a following/follower system with real-time updates.",
-    //     tags: [
-    //         "Next.js",
-    //         "React",
-    //         "PostgreSql",
-    //         "Tailwind",
-    //         "Liveblock",
-    //         "Canvas",
-    //         "",
-    //         "AWS",
-    //         "Redis",
-    //         "EC2",
-    //         "Node.js",
-    //         "Load balancer",
-    //     ],
-    //     gitURL: "https://github.com/vishalp-65/whiteboard-clone-.git",
-    //     liveDemo: "https://whiteboard-clone-livid.vercel.app/",
-    //     details: [
-    //         "Created a Twitter using Next.js with user authentication, tweet posting, a following/follower system, real-time updates, and a user recommendation system.",
-    //         "Utilized PostgreSQL as database and GraphQL to fetch necessary data, enhance application scalability & performance.",
-    //         "Integrated Redis for caching expensive queries like user recommendations, improving speed by 30% and reducing database load by 40%.",
-    //         "Deployed on EC2 with a load balancer for high availability and scalability, enhancing security with CloudFront for secure connections and data integrity.",
-    //         "Implemented rate limiting on tweets to prevent unnecessary strain on the database, reducing potential costs by 15% and enhancing application performance.",
-    //     ],
-    //     date: "April 2024",
-    //     imageUrl: twitter,
-    //     demoImg: [
-    //         "/projects/twitter1.png",
-    //         "/projects/twitter2.png",
-    //         "/projects/twitter3.png",
-    //         "/projects/twitter4.png",
-    //         "/projects/twitter5.png",
-    //         "/projects/twitter6.png",
-    //     ],
-    // },
+    {
+        title: "WhiteBoard",
+        description:
+            "WhiteBoard is a real-time collaborative drawing platform that enables users to create, share, and interact on digital boards with features like sketching, shapes, sticky notes, and multi-layered drawing support.",
+        tags: [
+            "Next.js",
+            "React",
+            "PostgreSql",
+            "Tailwind",
+            "Liveblock",
+            "Canvas",
+            "Convex",
+            "Clerk",
+            "Vercel",
+            "AWS S3",
+            "Zod",
+        ],
+        gitURL: "https://github.com/vishalp-65/whiteboard-clone-.git",
+        liveDemo: "https://whiteboard-clone-livid.vercel.app/",
+        details: [
+            "Developed an interactive whiteboard application using Next.js, React, and Canvas, enabling real-time drawing and collaboration between multiple users.",
+            "Integrated Liveblock to ensure real-time syncing of drawings and changes across users, with the ability to share boards and send invitations to collaborate in real-time.",
+            "Supported up to 100 layers of drawing, allowing users to draw with multiple tools like sketch, rectangle, circle, and sticky notes for a richer user experience.",
+            "Utilized PostgreSQL for efficient data management and Convex for optimized real-time data querying and state synchronization.",
+            "Leveraged AWS S3 for storing assets securely and Vercel for seamless deployment and scaling.",
+            "Implemented Zod for data validation to ensure reliable and secure user input.",
+            "Enhanced application scalability by utilizing a serverless architecture with Vercel, ensuring efficient handling of real-time updates and large user volumes.",
+            "Integrated Clerk for smooth user authentication and rate-limiting techniques to prevent overloading the system, improving performance and reducing operational costs.",
+        ],
+        date: "September 2024",
+        imageUrl: board,
+        demoImg: [
+            "/projects/board4.png",
+            "/projects/board2.png",
+            "/projects/board3.png",
+            "/projects/board1.png",
+            "/projects/board5.png",
+            "/projects/board6.png",
+        ],
+    },
     {
         title: "Twitter",
         description:
-            "Twitter is platform using Next.js, featuring user authentication, tweet posting, and a following/follower system with real-time updates.",
+            "Twitter is platform created using Next.js, featuring user authentication, tweet posting, and a following/follower system with real-time updates.",
         tags: [
             "Next.js",
             "React",
@@ -229,15 +232,18 @@ export const projectsData = [
     {
         title: "Messenger",
         description:
-            "Messenger is a chatting website where we can send messeges in real-time to single user as well as in group",
+            "Messenger is a realtime messeges website where we can send messeges in real-time to single user as well as in group",
         tags: [
             "Next.js",
             "Tailwind",
             "Prisma",
             "MongoDB",
+            "Typescript",
+            "Web sockets",
             "Pusher",
             "NextAuth",
             "CDN",
+            "Cloudinary",
         ],
         gitURL: "https://github.com/vishalp-65/Messenger_Clone.git",
         liveDemo: "https://messenger-clone-nine-black.vercel.app/",

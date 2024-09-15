@@ -21,7 +21,6 @@ const ProjectModal = (pros: Props) => {
     const { title, tags, gitURL, liveDemo, details, date, demoImg } = data;
 
     useEffect(() => {
-        console.log("data:", data);
         document.body.style.overflow = "hidden";
         return (): void => {
             document.body.style.overflow = "unset";
@@ -31,7 +30,7 @@ const ProjectModal = (pros: Props) => {
     return (
         <>
             <dialog className="fixed left-0 top-0 w-full h-full bg-black bg-opacity-50 z-50 overflow-auto backdrop-blur flex justify-center items-center">
-                <div className="bg-white rounded-lg border border-gray-300 dark:border-gray-600 m-auto p-4 pt-4 relative w-[60rem] min-h-[25rem] dark:bg-gray-900 dark:text-white shadow-md">
+                <div className="bg-white rounded-lg border border-gray-300 dark:border-gray-600 m-auto p-4 pt-4 relative max-w-[60rem] md:min-w-[50rem] min-h-[25rem] dark:bg-gray-900 dark:text-white shadow-md">
                     <div className="sm:flex sm:flex-col sm:items-start sm:justify-between md:flex-row md:items-start md:justify-between mt-4 h-full">
                         <div
                             className="md:w-1/4 sm:gap-3 sm:w-full md:gap-3 sm:h-auto md:min-h-[30rem] md:max-h-[35rem] sm:flex-row sm:items-start 

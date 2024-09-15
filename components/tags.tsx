@@ -25,4 +25,4 @@ const Tags = (props: Props) => {
     );
 };
 
-export default Tags;
+export default React.memo(Tags);
