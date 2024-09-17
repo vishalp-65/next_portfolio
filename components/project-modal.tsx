@@ -29,12 +29,15 @@ const ProjectModal = (pros: Props) => {
 
     return (
         <>
-            <dialog className="fixed left-0 top-0 w-full h-full bg-black bg-opacity-50 z-50 overflow-auto backdrop-blur flex justify-center items-center">
-                <div className="bg-white rounded-lg border border-gray-300 dark:border-gray-600 m-auto p-4 pt-4 relative max-w-[60rem] md:min-w-[50rem] min-h-[25rem] dark:bg-gray-900 dark:text-white shadow-md">
+            <dialog className="fixed left-0 top-0 p-2 w-full h-full bg-black bg-opacity-50 z-50 overflow-auto backdrop-blur flex justify-center items-center">
+                <div
+                    className="bg-white rounded-lg border border-gray-300 dark:border-gray-600 m-auto p-4 pt-4 relative 
+                max-w-[60rem] md:min-w-[50rem] min-h-[25rem] max-h-full dark:bg-gray-900 dark:text-white shadow-md drop-shadow-lg"
+                >
                     <div className="sm:flex sm:flex-col sm:items-start sm:justify-between md:flex-row md:items-start md:justify-between mt-4 h-full">
                         <div
-                            className="md:w-1/4 sm:gap-3 sm:w-full md:gap-3 sm:h-auto md:min-h-[30rem] md:max-h-[35rem] sm:flex-row sm:items-start 
-                                sm:justify-between md:flex md:flex-col md:items-start md:justify-between shadow-md z-10
+                            className="md:w-1/4 sm:gap-3 sm:w-full md:gap-3 sm:h-auto md:min-h-[30rem] md:max-h-full sm:flex-row sm:items-start 
+                                sm:justify-between md:flex md:flex-col md:items-start md:justify-between shadow-md drop-shadow-md z-30
                                 bg-gray-100 dark:bg-gray-800 dark:text-white p-4 rounded-md overflow-x-auto"
                         >
                             <p className="text-3xl font-bold">{title}</p>
@@ -45,13 +48,15 @@ const ProjectModal = (pros: Props) => {
                                 <div className="flex items-center gap-3">
                                     <a href={gitURL} target="_blank">
                                         <p className="flex items-center gap-2 text-sm">
-                                            GitHub <FaGithub />{" "}
+                                            GitHub{" "}
+                                            <FaGithub className="text-base" />{" "}
                                         </p>
                                     </a>
                                     {liveDemo && (
                                         <a href={liveDemo} target="_blank">
                                             <p className="flex items-center gap-2 text-sm">
-                                                URL <FaFirefoxBrowser />{" "}
+                                                URL{" "}
+                                                <FaFirefoxBrowser className="text-base" />{" "}
                                             </p>
                                         </a>
                                     )}
@@ -67,17 +72,6 @@ const ProjectModal = (pros: Props) => {
                                     spaceBetween={20}
                                     slidesPerView={"auto"}
                                     pagination={{ clickable: true }}
-                                    breakpoints={{
-                                        640: {
-                                            slidesPerView: 1,
-                                        },
-                                        768: {
-                                            slidesPerView: 2,
-                                        },
-                                        1024: {
-                                            slidesPerView: 1,
-                                        },
-                                    }}
                                     onSwiper={(swiper) => console.log(swiper)}
                                     className="w-full h-full"
                                 >

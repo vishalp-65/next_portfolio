@@ -8,6 +8,9 @@ import qkart from "@/public/qkart.png";
 import flight from "@/public/flight.png";
 import crmApp from "@/public/crm-app.png";
 import board from "@/public/projects/board4.png";
+import chatbot from "@/public/projects/chatbot3.png";
+import comment from "@/public/projects/comment1.png";
+import intract from "@/public/projects/intract1.png";
 import { RiProfileLine } from "react-icons/ri";
 
 export const links = [
@@ -206,29 +209,7 @@ export const projectsData = [
             "/projects/twitter6.png",
         ],
     },
-    {
-        title: "Netflix",
-        description:
-            "Made a Netflix UI clone along with authentication using NextAuth.",
-        tags: ["React", "Next.js", "Tailwind", "Prisma", "MongoDB", "NextAuth"],
-        gitURL: "https://github.com/vishalp-65/netflix-clone.git",
-        liveDemo: "https://nettfliix-vp.netlify.app/auth",
-        details: [
-            "Leveraged Next.js for server-side rendering, enhancing performance and SEO. Integrated NextAuth for secure authentication, enabling smooth user login via Google & GitHub.",
-            "Implemented TypeScript for improved code readability and type safety. Employed cookie-based authentication for enhanced security and personalized user sessions.",
-            "Implemented MongoDB & Prisma for efficient database management, ensuring seamless data operations and scalability. Ensured full responsiveness on all pages, providing a consistent user experience across various devices",
-        ],
-        date: "April 2024",
-        imageUrl: netflixClone,
-        demoImg: [
-            "/projects/netflix1.png",
-            "/projects/netflix2.png",
-            "/projects/netflix3.png",
-            "/projects/netflix4.png",
-            "/projects/netflix5.png",
-            "/projects/netflix6.png",
-        ],
-    },
+
     {
         title: "Messenger",
         description:
@@ -260,6 +241,43 @@ export const projectsData = [
             "/projects/messenger3.png",
             "/projects/messenger4.png",
             "/projects/messenger5.png",
+        ],
+    },
+    {
+        title: "AI Crawler",
+        description:
+            "AI Crawler is a web-based platform that allows users to ask questions about a specific website by crawling its data and generating responses using the Gemini API, with conversation history and follow-up support.",
+        tags: [
+            "React",
+            "Next.js",
+            "Typescript",
+            "Node.js",
+            "MongoDB",
+            "Express",
+            "Cloudfront",
+            "Load balancer",
+            "Tailwind",
+            "Gemini API",
+            "AWS S3",
+        ],
+        gitURL: "https://github.com/vishalp-65/ai-crawler.git",
+        liveDemo: "https://d1yqllpmzm8db3.cloudfront.net/",
+        details: [
+            "Developed an AI-powered web crawler using Next.js, Node.js, and Gemini API, allowing users to ask questions about a specific website by providing a link.",
+            "Utilized Typescript on both frontend and backend for strong typing and better code management, enhancing development speed and reducing errors.",
+            "Implemented MongoDB to store user conversations, enabling users to access, modify, and maintain a history of their questions and responses.",
+            "Enabled users to ask follow-up questions related to their previous queries, providing a seamless conversational experience.",
+            "Leveraged AWS S3 for secure data storage, ensuring that all crawled data and user interactions are efficiently stored and retrieved.",
+            "Deployed on a scalable architecture with Express and React for smooth front-end experience and optimized server-side operations.",
+            "Integrated Tailwind CSS for clean and responsive UI design, improving user interaction across different devices.",
+        ],
+        date: "Augest 2024",
+        imageUrl: chatbot,
+        demoImg: [
+            "/projects/chatbot1.png",
+            "/projects/chatbot2.png",
+            "/projects/chatbot3.png",
+            "/projects/chatbot4.png",
         ],
     },
     {
@@ -319,6 +337,84 @@ export const projectsData = [
             "/projects/qkart3.png",
             "/projects/qkart4.png",
             "/projects/qkart5.png",
+        ],
+    },
+    {
+        title: "Comment System",
+        description:
+            "Comment System is a platform enabling users to post rich-text comments with images, tag users, and reply with nested comments, all enhanced by reactions and real-time updates.",
+        tags: [
+            "React",
+            "Next.js",
+            "Node.js",
+            "MongoDB",
+            "Express",
+            "Tailwind",
+            "AWS S3",
+            "Lazy loading",
+            "Context API",
+            "Custom Hooks",
+        ],
+        gitURL: "https://github.com/vishalp-65/comment-system.git",
+        liveDemo: "https://comment-system-theta.vercel.app/",
+        details: [
+            "Built a dynamic comment system using React, Next.js, and Node.js, allowing users to post comments with customized text formatting (bold, italic, underline) and include images and links.",
+            "Implemented user tagging within comments, enabling users to mention others easily.",
+            "Required authentication for users to create comments, ensuring a secure and verified user base.",
+            "Enabled emoji reactions on comments, with real-time count updates for each reaction, enhancing user interaction.",
+            "Supported nested comments to allow users to reply directly to specific comments, creating a threaded conversation.",
+            "Utilized AWS S3 for efficient image storage and Lazy loading for improved performance by loading content as needed.",
+            "Integrated Context API and Custom Hooks for state management and seamless user experience across different components.",
+            "Optimized for scalability with MongoDB, ensuring smooth handling of large volumes of comments and user interactions.",
+        ],
+        date: "Augest 2024",
+        imageUrl: comment,
+        demoImg: [
+            "/projects/comment1.png",
+            "/projects/comment2.png",
+            "/projects/comment3.png",
+            "/projects/comment4.png",
+        ],
+    },
+    {
+        title: "Netflix",
+        description:
+            "Made a Netflix UI clone along with authentication using NextAuth.",
+        tags: ["React", "Next.js", "Tailwind", "Prisma", "MongoDB", "NextAuth"],
+        gitURL: "https://github.com/vishalp-65/netflix-clone.git",
+        liveDemo: "https://nettfliix-vp.netlify.app/auth",
+        details: [
+            "Leveraged Next.js for server-side rendering, enhancing performance and SEO. Integrated NextAuth for secure authentication, enabling smooth user login via Google & GitHub.",
+            "Implemented TypeScript for improved code readability and type safety. Employed cookie-based authentication for enhanced security and personalized user sessions.",
+            "Implemented MongoDB & Prisma for efficient database management, ensuring seamless data operations and scalability. Ensured full responsiveness on all pages, providing a consistent user experience across various devices",
+        ],
+        date: "April 2024",
+        imageUrl: netflixClone,
+        demoImg: [
+            "/projects/netflix1.png",
+            "/projects/netflix2.png",
+            "/projects/netflix3.png",
+            "/projects/netflix4.png",
+            "/projects/netflix5.png",
+            "/projects/netflix6.png",
+        ],
+    },
+    {
+        title: "Intract UI clone",
+        description:
+            "UI clone of Interact website with full responsive, made using Nextjs and tailwind CSS",
+        tags: ["Next.js", "Tailwind", "Typescript", "Lazy Loading", "React"],
+        gitURL: "https://github.com/vishalp-65/Intract_assignment.git",
+        liveDemo: "https://intract-assignment.vercel.app/",
+        details: [
+            "UI clone of Interact website with full responsive, made using Nextjs and tailwind CSS",
+        ],
+        date: "May 2024",
+        imageUrl: intract,
+        demoImg: [
+            "/projects/intract1.png",
+            "/projects/intract2.png",
+            "/projects/intract3.png",
         ],
     },
     {

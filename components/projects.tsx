@@ -54,9 +54,6 @@ const Projects = () => {
                     pagination={{ clickable: true }}
                     watchSlidesProgress={true} // For lazy loading to work properly
                     breakpoints={{
-                        640: {
-                            slidesPerView: 1, // 1 slide on small screens
-                        },
                         768: {
                             slidesPerView: 1, // 1 slide on medium screens
                         },

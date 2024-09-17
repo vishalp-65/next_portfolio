@@ -38,7 +38,11 @@ export default function Project({
                 setData(projectData);
             }}
         >
-            <section className="bg-gray-100 max-w-[40rem] border border-black/5 min-h-[24rem] rounded-lg overflow-hidden sm:pr-8 relative sm:h-[24rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+            <section
+                className="bg-gray-100 max-w-[40rem] border border-black/5 min-h-[24rem] rounded-lg overflow-hidden 
+            sm:pr-8 relative sm:h-[24rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white 
+            dark:bg-white/10 dark:hover:bg-white/20 drop-shadow-md"
+            >
                 <div className="h-full">
                     <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col justify-around h-full sm:group-even:ml-[18rem]">
                         <div>
