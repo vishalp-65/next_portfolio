@@ -1,44 +1,44 @@
-import React from "react";
-import { LuGraduationCap } from "react-icons/lu";
-import messengerClone from "@/public/messenger-clone.png";
-import netflixClone from "@/public/netflix-clone-demo.png";
-import vercelClone from "@/public/vercel-clone.png";
-import twitter from "@/public/twitter.png";
-import qkart from "@/public/qkart.png";
-import flight from "@/public/flight.png";
-import crmApp from "@/public/crm-app.png";
-import board from "@/public/projects/board4.png";
-import chatbot from "@/public/projects/chatbot3.png";
-import comment from "@/public/projects/comment1.png";
-import intract from "@/public/projects/intract1.png";
-import { RiProfileLine } from "react-icons/ri";
+import React from "react"
+import { LuGraduationCap } from "react-icons/lu"
+import messengerClone from "@/public/messenger-clone.png"
+import netflixClone from "@/public/netflix-clone-demo.png"
+import vercelClone from "@/public/vercel-clone.png"
+import twitter from "@/public/twitter.png"
+import qkart from "@/public/qkart.png"
+import flight from "@/public/flight.png"
+import crmApp from "@/public/crm-app.png"
+import board from "@/public/projects/board4.png"
+import chatbot from "@/public/projects/chatbot3.png"
+import comment from "@/public/projects/comment1.png"
+import intract from "@/public/projects/intract1.png"
+import { RiProfileLine } from "react-icons/ri"
 
 export const links = [
     {
         name: "Home",
-        hash: "#home",
+        hash: "#home"
     },
     {
         name: "About",
-        hash: "#about",
+        hash: "#about"
     },
     {
         name: "Timeline",
-        hash: "#timeline",
+        hash: "#timeline"
     },
     {
         name: "Projects",
-        hash: "#projects",
+        hash: "#projects"
     },
     {
         name: "Skills",
-        hash: "#skills",
+        hash: "#skills"
     },
     {
         name: "Contact",
-        hash: "#contact",
-    },
-] as const;
+        hash: "#contact"
+    }
+] as const
 
 export const educationData = [
     {
@@ -47,19 +47,38 @@ export const educationData = [
         collageName: "TIMT",
         date: "Aug 2020-July 2022",
         icon: React.createElement(LuGraduationCap),
-        grade: "7.5",
-    },
-    {
-        title: "BCA (Bachelor of computer application",
-        location: "Karnal",
-        collageName: "Pt. CLS college",
-        date: "Aug 2017-July 2020",
-        icon: React.createElement(LuGraduationCap),
-        grade: "7.2",
-    },
-] as const;
+        grade: "8.5"
+    }
+    // {
+    //     title: "BCA (Bachelor of computer application",
+    //     location: "Karnal",
+    //     collageName: "Pt. CLS college",
+    //     date: "Aug 2017-July 2020",
+    //     icon: React.createElement(LuGraduationCap),
+    //     grade: "7.2"
+    // }
+] as const
 
 export const experiencesData = [
+    {
+        companyName: "The Alter Office",
+        title: "Backend Engineer",
+        experience: "4 months",
+        location: "Bangalore",
+        description:
+            "Implemented TOTP 2FA with email verification and Google/Microsoft Authenticator, RBAC with NestJS guards, and DDD architecture using custom pipes and filters. Added Redis rate limiting, NestJS Interceptors, and CI/CD with GitHub Actions, improving security, code quality, and deployment efficiency.",
+        icon: React.createElement(RiProfileLine),
+        date: "Oct 2024 - Current",
+        techStack: [
+            "NestJS",
+            "Typescript",
+            "Javascript",
+            "Docker",
+            "Node.js",
+            "Kafka",
+            "AWS"
+        ]
+    },
     {
         companyName: "Digicell",
         title: "Software Engineer",
@@ -76,8 +95,8 @@ export const experiencesData = [
             "Node.js",
             "Next.js",
             "Kafka",
-            "AWS",
-        ],
+            "AWS"
+        ]
     },
     {
         companyName: "Open Access Technology India",
@@ -87,9 +106,9 @@ export const experiencesData = [
         description: `Designed micro-service architectures for both front-end (React) and back-end (Node.js, PostgreSQL) components,leading to a robust and scalable application. Led the development of a real-time chat feature using WebSockets, resulting in a 20% increase in user engagement.`,
         icon: React.createElement(RiProfileLine),
         date: "Aug 2022 - July 2023",
-        techStack: ["React.js", "Node.js", "Typescript", "Javascript"],
-    },
-] as const;
+        techStack: ["React.js", "Node.js", "Typescript", "Javascript"]
+    }
+] as const
 
 export const projectsData = [
     {
@@ -108,7 +127,7 @@ export const projectsData = [
             "Node.js",
             "Docker",
             "CI/CD",
-            "Github Actions",
+            "Github Actions"
         ],
         gitURL: "https://github.com/vishalp-65/Project_Builder.git",
         liveDemo: "",
@@ -118,7 +137,7 @@ export const projectsData = [
             "Employed AWS S3 for build storage, enhancing reliability and utilized ECS for dynamic container spin-up, ensuring efficient resource allocation and scalability.",
             "Created container images with Docker, deployed them to Amazon ECR, and streamed all logs to ClickHouse using Kafka, improving log management and analysis.",
             "Integrated Kafka and ClickHouse for real-time log streaming, reducing logging costs by 20% and improving deployment speed by 25%. This also enhanced real-time monitoring and debugging capabilities.",
-            "Implemented CI/CD using webhooks and GitHub Actions, enabling auto-deploy on commit, and added user authentication with GitHub integration for streamlined deployments",
+            "Implemented CI/CD using webhooks and GitHub Actions, enabling auto-deploy on commit, and added user authentication with GitHub integration for streamlined deployments"
         ],
         date: "April 2024",
         imageUrl: vercelClone,
@@ -128,8 +147,8 @@ export const projectsData = [
             "/projects/builder3.png",
             "/projects/builder4.png",
             "/projects/builder5.png",
-            "/projects/builder6.png",
-        ],
+            "/projects/builder6.png"
+        ]
     },
     {
         title: "WhiteBoard",
@@ -146,7 +165,7 @@ export const projectsData = [
             "Clerk",
             "Vercel",
             "AWS S3",
-            "Zod",
+            "Zod"
         ],
         gitURL: "https://github.com/vishalp-65/whiteboard-clone-.git",
         liveDemo: "https://whiteboard-clone-livid.vercel.app/",
@@ -158,7 +177,7 @@ export const projectsData = [
             "Leveraged AWS S3 for storing assets securely and Vercel for seamless deployment and scaling.",
             "Implemented Zod for data validation to ensure reliable and secure user input.",
             "Enhanced application scalability by utilizing a serverless architecture with Vercel, ensuring efficient handling of real-time updates and large user volumes.",
-            "Integrated Clerk for smooth user authentication and rate-limiting techniques to prevent overloading the system, improving performance and reducing operational costs.",
+            "Integrated Clerk for smooth user authentication and rate-limiting techniques to prevent overloading the system, improving performance and reducing operational costs."
         ],
         date: "September 2024",
         imageUrl: board,
@@ -168,8 +187,8 @@ export const projectsData = [
             "/projects/board3.png",
             "/projects/board1.png",
             "/projects/board5.png",
-            "/projects/board6.png",
-        ],
+            "/projects/board6.png"
+        ]
     },
     {
         title: "Twitter",
@@ -187,7 +206,7 @@ export const projectsData = [
             "Redis",
             "EC2",
             "Node.js",
-            "Load balancer",
+            "Load balancer"
         ],
         gitURL: "https://github.com/vishalp-65/twitter.git",
         liveDemo: "https://twitter-sigma-cyan.vercel.app/",
@@ -196,7 +215,7 @@ export const projectsData = [
             "Utilized PostgreSQL as database and GraphQL to fetch necessary data, enhance application scalability & performance.",
             "Integrated Redis for caching expensive queries like user recommendations, improving speed by 30% and reducing database load by 40%.",
             "Deployed on EC2 with a load balancer for high availability and scalability, enhancing security with CloudFront for secure connections and data integrity.",
-            "Implemented rate limiting on tweets to prevent unnecessary strain on the database, reducing potential costs by 15% and enhancing application performance.",
+            "Implemented rate limiting on tweets to prevent unnecessary strain on the database, reducing potential costs by 15% and enhancing application performance."
         ],
         date: "April 2024",
         imageUrl: twitter,
@@ -206,8 +225,8 @@ export const projectsData = [
             "/projects/twitter3.png",
             "/projects/twitter4.png",
             "/projects/twitter5.png",
-            "/projects/twitter6.png",
-        ],
+            "/projects/twitter6.png"
+        ]
     },
 
     {
@@ -224,14 +243,14 @@ export const projectsData = [
             "Pusher",
             "NextAuth",
             "CDN",
-            "Cloudinary",
+            "Cloudinary"
         ],
         gitURL: "https://github.com/vishalp-65/Messenger_Clone.git",
         liveDemo: "https://messenger-clone-nine-black.vercel.app/",
         details: [
             "Engineered a responsive messaging app with Next.js, Tailwind, and NextAuth, utilizing MongoDB for data storage. Implemented Pusher for real-time messaging and Cloudinary CDN for image uploads.",
             "Developed comprehensive features including file sharing, group chat, and chat room management, enhancing user interaction and collaboration and overall improve speed of app.",
-            "Orchestrated CRUD operations for seamless data management, ensuring efficient functionality and scalability of the messaging application.",
+            "Orchestrated CRUD operations for seamless data management, ensuring efficient functionality and scalability of the messaging application."
         ],
         date: "Aug 2023-Nov 2023",
         imageUrl: messengerClone,
@@ -240,8 +259,8 @@ export const projectsData = [
             "/projects/messenger2.png",
             "/projects/messenger3.png",
             "/projects/messenger4.png",
-            "/projects/messenger5.png",
-        ],
+            "/projects/messenger5.png"
+        ]
     },
     {
         title: "AI Crawler",
@@ -258,7 +277,7 @@ export const projectsData = [
             "Load balancer",
             "Tailwind",
             "Gemini API",
-            "AWS S3",
+            "AWS S3"
         ],
         gitURL: "https://github.com/vishalp-65/ai-crawler.git",
         liveDemo: "https://d1yqllpmzm8db3.cloudfront.net/",
@@ -269,7 +288,7 @@ export const projectsData = [
             "Enabled users to ask follow-up questions related to their previous queries, providing a seamless conversational experience.",
             "Leveraged AWS S3 for secure data storage, ensuring that all crawled data and user interactions are efficiently stored and retrieved.",
             "Deployed on a scalable architecture with Express and React for smooth front-end experience and optimized server-side operations.",
-            "Integrated Tailwind CSS for clean and responsive UI design, improving user interaction across different devices.",
+            "Integrated Tailwind CSS for clean and responsive UI design, improving user interaction across different devices."
         ],
         date: "Augest 2024",
         imageUrl: chatbot,
@@ -277,8 +296,8 @@ export const projectsData = [
             "/projects/chatbot1.png",
             "/projects/chatbot2.png",
             "/projects/chatbot3.png",
-            "/projects/chatbot4.png",
-        ],
+            "/projects/chatbot4.png"
+        ]
     },
     {
         title: "CRM App",
@@ -291,14 +310,14 @@ export const projectsData = [
             "React chart",
             "MongoDB",
             "Node.js",
-            "Express",
+            "Express"
         ],
         gitURL: "https://github.com/vishalp-65/CRM_App.git",
         liveDemo: "https://crm-app-vishal.netlify.app/",
         details: [
             "Leveraged MERN stack with Redux Toolkit for streamlined state management, resulting in a 15% improvement in application speed and user interaction.",
             "Established role-based access control (RBAC)- Admin for oversight, Engineer for ticket management, and Customer for creation. Empowered Engineers to manage tickets while enabling Admins to oversee all operations for seamless workflow.",
-            "Incorporated chart visualization using React Chart.js to provide Admins with insightful ticket metrics for decision-making.",
+            "Incorporated chart visualization using React Chart.js to provide Admins with insightful ticket metrics for decision-making."
         ],
         date: "March 2024-April 2024",
         imageUrl: crmApp,
@@ -306,8 +325,8 @@ export const projectsData = [
             "/projects/crm1.png",
             "/projects/crm2.png",
             "/projects/crm3.png",
-            "/projects/crm4.png",
-        ],
+            "/projects/crm4.png"
+        ]
     },
     {
         title: "Qkart E-commerce",
@@ -320,14 +339,14 @@ export const projectsData = [
             "MongoDB",
             "Node.js",
             "Express",
-            "Debouncing",
+            "Debouncing"
         ],
         gitURL: "https://github.com/vishalp-65/Q_Kart-React.git",
         liveDemo: "https://qkart-ecommerce-vishal.netlify.app/",
         details: [
             "Boosted state management with Context APIs, enhancing performance by 25% and streamlining maintainability across components.",
             "Improved UI interface by adding responsive design elements for a uniform experience across different devices using CSS Framework Material UI.",
-            "Optimized the search feature using Debouncing and Facilitated CRUD operations on the client side to select, add, and delete addresses for delivery Fulfilled global accessibility by deploying the application backend on Render and frontend on Vercel, resulting in a 40% improvement in user reach.",
+            "Optimized the search feature using Debouncing and Facilitated CRUD operations on the client side to select, add, and delete addresses for delivery Fulfilled global accessibility by deploying the application backend on Render and frontend on Vercel, resulting in a 40% improvement in user reach."
         ],
         date: "Sept 2023-Oct 2023",
         imageUrl: qkart,
@@ -336,8 +355,8 @@ export const projectsData = [
             "/projects/qkart2.png",
             "/projects/qkart3.png",
             "/projects/qkart4.png",
-            "/projects/qkart5.png",
-        ],
+            "/projects/qkart5.png"
+        ]
     },
     {
         title: "Comment System",
@@ -353,7 +372,7 @@ export const projectsData = [
             "AWS S3",
             "Lazy loading",
             "Context API",
-            "Custom Hooks",
+            "Custom Hooks"
         ],
         gitURL: "https://github.com/vishalp-65/comment-system.git",
         liveDemo: "https://comment-system-theta.vercel.app/",
@@ -365,7 +384,7 @@ export const projectsData = [
             "Supported nested comments to allow users to reply directly to specific comments, creating a threaded conversation.",
             "Utilized AWS S3 for efficient image storage and Lazy loading for improved performance by loading content as needed.",
             "Integrated Context API and Custom Hooks for state management and seamless user experience across different components.",
-            "Optimized for scalability with MongoDB, ensuring smooth handling of large volumes of comments and user interactions.",
+            "Optimized for scalability with MongoDB, ensuring smooth handling of large volumes of comments and user interactions."
         ],
         date: "Augest 2024",
         imageUrl: comment,
@@ -373,8 +392,8 @@ export const projectsData = [
             "/projects/comment1.png",
             "/projects/comment2.png",
             "/projects/comment3.png",
-            "/projects/comment4.png",
-        ],
+            "/projects/comment4.png"
+        ]
     },
     {
         title: "Netflix",
@@ -386,7 +405,7 @@ export const projectsData = [
         details: [
             "Leveraged Next.js for server-side rendering, enhancing performance and SEO. Integrated NextAuth for secure authentication, enabling smooth user login via Google & GitHub.",
             "Implemented TypeScript for improved code readability and type safety. Employed cookie-based authentication for enhanced security and personalized user sessions.",
-            "Implemented MongoDB & Prisma for efficient database management, ensuring seamless data operations and scalability. Ensured full responsiveness on all pages, providing a consistent user experience across various devices",
+            "Implemented MongoDB & Prisma for efficient database management, ensuring seamless data operations and scalability. Ensured full responsiveness on all pages, providing a consistent user experience across various devices"
         ],
         date: "April 2024",
         imageUrl: netflixClone,
@@ -396,8 +415,8 @@ export const projectsData = [
             "/projects/netflix3.png",
             "/projects/netflix4.png",
             "/projects/netflix5.png",
-            "/projects/netflix6.png",
-        ],
+            "/projects/netflix6.png"
+        ]
     },
     {
         title: "Intract UI clone",
@@ -407,15 +426,15 @@ export const projectsData = [
         gitURL: "https://github.com/vishalp-65/Intract_assignment.git",
         liveDemo: "https://intract-assignment.vercel.app/",
         details: [
-            "UI clone of Interact website with full responsive, made using Nextjs and tailwind CSS",
+            "UI clone of Interact website with full responsive, made using Nextjs and tailwind CSS"
         ],
         date: "May 2024",
         imageUrl: intract,
         demoImg: [
             "/projects/intract1.png",
             "/projects/intract2.png",
-            "/projects/intract3.png",
-        ],
+            "/projects/intract3.png"
+        ]
     },
     {
         title: "Flight Booking",
@@ -429,7 +448,7 @@ export const projectsData = [
             "Express",
             "Cron jobs",
             "JWT",
-            "AWS",
+            "AWS"
         ],
         gitURL: "https://github.com/vishalp-65/Flight-Booking-Backend-.git",
         liveDemo: "",
@@ -437,13 +456,13 @@ export const projectsData = [
             "Created RESTful APIs for seamless frontend-backend communication based on Micro-Services architecture.",
             "Successfully optimized database queries and improved API response times by 30% through query optimization and indexing techniques.",
             "Ensured data integrity and consistency by designing and implementing MySQL transactions for critical booking operations.",
-            "Developed a robust user authentication and authorization system using JWT, enhancing data security and user experience.",
+            "Developed a robust user authentication and authorization system using JWT, enhancing data security and user experience."
         ],
         date: "May 2023-Aug 2023",
         imageUrl: flight,
-        demoImg: [flight],
-    },
-] as const;
+        demoImg: [flight]
+    }
+] as const
 
 export const skillsData = [
     { name: "JavaScript", img: "/skills/javascript.svg" },
@@ -469,5 +488,5 @@ export const skillsData = [
     { name: "Socket.io", img: "/skills/socket.png" },
     { name: "Postman", img: "/skills/postman.png" },
     { name: "CI/CD", img: "/skills/cicd.png" },
-    { name: "Github Actions", img: "/skills/github_action.svg" },
-] as const;
+    { name: "Github Actions", img: "/skills/github_action.svg" }
+] as const

@@ -32,7 +32,7 @@ const ProjectModal = (pros: Props) => {
             <dialog className="fixed left-0 top-0 p-2 w-full h-full bg-black bg-opacity-50 z-50 overflow-auto backdrop-blur flex justify-center items-center">
                 <div
                     className="bg-white rounded-lg border border-gray-300 dark:border-gray-600 m-auto p-4 pt-4 relative 
-                max-w-[60rem] md:min-w-[50rem] min-h-[25rem] max-h-full dark:bg-gray-900 dark:text-white shadow-md drop-shadow-lg"
+                max-w-[60rem] md:min-w-[50rem] min-h-[25rem] max-h-full dark:bg-gray-900 dark:text-white shadow-md drop-shadow-lg overflow-hidden"
                 >
                     <div className="sm:flex sm:flex-col sm:items-start sm:justify-between md:flex-row md:items-start md:justify-between mt-4 h-full">
                         <div
